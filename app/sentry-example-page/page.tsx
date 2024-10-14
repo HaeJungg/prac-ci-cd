@@ -48,7 +48,7 @@ export default function Page() {
             fontSize: "14px",
             margin: "18px",
           }}
-          onClick={() => {
+          onClick={async () => {
             Sentry.captureMessage("Something went wrong", "error");
           }}
         >
